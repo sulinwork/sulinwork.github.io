@@ -111,7 +111,7 @@ public class MyExpiredSessionStrategy implements SessionInformationExpiredStrate
 #### 从数据库动态加载权限
 - 核心接口实现UserDetails和UserDetailsService
 
-```
+```java
 
 @Service
 public class MyUserDetailsService implements UserDetailsService {
@@ -175,7 +175,7 @@ public class MyUserDetails implements UserDetails {
 
 
 #### 动态加载资源鉴权规则
-```
+``` java
 //写一个类
 @Service("rbacService")
 public class MyRBACService {
